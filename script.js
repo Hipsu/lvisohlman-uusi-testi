@@ -1,6 +1,6 @@
 const csvUrl =
-  //  "https://pub-fcae7e9489944989985f39a9c09563c5.r2.dev/laskennassa.csv";
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQb1OGoT6WIHnhIfz4CmtRW4U5vKWChnZRWJmtUWhEaIAOz8okH-lg_wT3JJ9L2Sxqj6jMmi8l9SDgv/pub?gid=0&single=true&output=csv";
+  "https://pub-fcae7e9489944989985f39a9c09563c5.r2.dev/laskennassa.csv";
+// "https://docs.google.com/spreadsheets/d/e/2PACX-1vQb1OGoT6WIHnhIfz4CmtRW4U5vKWChnZRWJmtUWhEaIAOz8okH-lg_wT3JJ9L2Sxqj6jMmi8l9SDgv/pub?gid=0&single=true&output=csv";
 function parseCSVLine(line) {
   const result = [];
   let current = "";
