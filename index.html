@@ -1,41 +1,76 @@
 <!doctype html>
-<html lang="en">
+
+<html lang="fi">
   <head>
+    <!-- Character encoding (supports Finnish letters like ä, ö) -->
     <meta charset="UTF-8" />
+
+    <!-- Makes the page responsive on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Table</title>
+
+    <!-- Title shown in browser tab -->
+    <title>Laskennassa</title>
+
+    <!-- Link to your shared CSS file -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <!-- ================= HEADER ================= -->
     <header>
-      <h1>My Company</h1>
+      <!-- Site title / logo -->
+      <h1>LVI-määrälaskenta Sohlman Oy</h1>
+
+      <!-- Navigation menu -->
       <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="data.html">Data</a>
-        <a href="contact.html">Contact</a>
+        <!-- index.html is your default page -->
+        <a href="index.html">Laskennassa</a>
+
+        <!-- Second page -->
+        <a href="laskettuja.html">Laskettuja</a>
       </nav>
     </header>
 
+    <!-- ================= MAIN CONTENT ================= -->
     <main>
+      <!-- Page heading -->
       <h2>LASKENNASSA</h2>
 
-      <div class="table-wrap">
-        <table id="csv-table">
-          <thead></thead>
-          <tbody></tbody>
-        </table>
-      </div>
+      <!--
+    This is your page-specific description.
+    You can freely edit this anytime without touching the Worker.
+    -->
+      <p>Tällä sivulla näkyvät parhaillaan laskennassa olevat rivit.</p>
 
-      <p id="table-status">Ladataan taulua...</p>
+      <!--
+    IMPORTANT PART 🚨
+
+    The Worker will ONLY replace the content between:
+    TABLE_START and TABLE_END
+
+    Do NOT remove these comments later.
+  -->
+      <!-- TABLE_START -->
+      <!-- TABLE_END -->
+
+      <!--
+    Anything below this stays untouched by the Worker
+  -->
     </main>
 
+    <!-- ================= FOOTER ================= -->
     <footer>
       <p>Email: contact@mycompany.com</p>
       <p>Phone: 123-456-7890</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!--
+  NOTE:
+  No script.js included anymore because:
+  - we are NOT fetching CSV in browser
+  - table is pre-generated
+
+  You can still add scripts later if needed.
+-->
   </body>
 </html>
